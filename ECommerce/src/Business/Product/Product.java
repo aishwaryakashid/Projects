@@ -1,0 +1,71 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package Business.Product;
+
+/**
+ *
+ * @author Rushabh
+ */
+public class Product {
+    private static int count = 0;
+    private String prodName;
+    private int price;
+    private int modelNumber;
+    private int availability;
+   
+    private int initialAvail;
+
+   
+
+    public int getInitialAvail() {
+        return initialAvail;
+    }
+
+    public void setInitialAvail(int initialAvail) {
+        this.initialAvail = initialAvail;
+    }
+
+   
+    public int getAvailability() {
+        return availability;
+    }
+
+    public void setAvailability(int availability) {
+        this.availability = availability;
+    }
+    
+
+    public Product() {
+        count++;
+        modelNumber = count;
+    }
+    
+    public String getProdName() {
+        return prodName;
+    }
+
+    public void setProdName(String prodName) {
+        this.prodName = prodName;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public int getModelNumber() {
+        return modelNumber;
+    }
+    
+    @Override
+    public String toString() {
+        return prodName;
+    }
+    
+}
